@@ -1,0 +1,100 @@
+/* Tab Content - menucool.com */
+
+        
+ul.tabs li
+{
+    display: inline;
+    margin: 0;/*no distance between tabs*/
+    background: White;
+    
+     font-size:17px;
+}
+        
+ul.tabs li a
+{
+    text-decoration: none;
+    position: relative;
+    padding: 7px 22px;
+    color: #000;
+    outline:none;
+    background: #ececec;
+ 
+    border-right:0;
+    font-size: 17px;
+   font-family:'calibri';
+    border-radius: 3px;
+    margin-left: 3px;
+    font-weight: 500;
+}
+
+/*Note: IE8 and earlier doesn't support li:last-child. You have to add another class to the last tab (LI) and specify its border-right as below.*/
+ul.tabs li:last-child a
+{
+   
+     font-size: 17px;
+   font-family:'calibri';
+}
+  
+        
+ul.tabs li a:hover
+{
+      border: 1px solid #CCC; 
+     font-family:'calibri';
+      font-size: 17px;
+    color: #000;
+    background: white;
+    border-bottom: none;
+}
+
+
+        
+ul.tabs li.selected a, ul.tabs li.selected a:hover
+{
+     font-size: 17px;
+   font-family:'calibri';
+    top: 0px;
+    font-weight:normal;
+    background: #FFF;
+    border-bottom: 1px solid #FFF;
+    color: #000;
+    margin-left: 1px;
+}
+        
+        
+ul.tabs li.selected a:hover
+{
+    text-decoration: none;
+   
+}
+
+
+@media (min-width:320px)and (max-width:990px){
+    
+    ul.tabs li a
+{
+    text-decoration: none;
+    position: relative;
+    padding: 2px;
+    color: #000;
+    outline:none;
+    background: #ececec;
+    border:1px solid #CCC;
+    border-right:0;
+    font-size: 17px;
+   font-family:'calibri';
+    border-right:1px solid #CCC;
+    border-radius: 3px;
+    margin-left: 3px;
+    font-weight: 500;
+}
+
+    
+}
+
+/*by developer*/
+/* overwrite*/
+    .tabs{border-bottom: 1px solid #CCC; }
+ul.tabs{width: 100%;padding: 3px 0 5px;font-size:17px;min-height: 41px;list-style-type: none;font-family:'calibri';text-align: left; /*set to left, center, or right to align the tabs as desired*/}
+ul.tabs li.selected a, ul.tabs li.selected a{border-top: 1px solid #CCC;border-left: 1px solid #CCC;border-right: 1px solid #CCC;border-radius: 6px 6px 0 0;font-weight: 500; 
+}
+/*overwrite*/
