@@ -1,4 +1,6 @@
 <?php
+
+/*Starting changes now*/
 session_start();
 require 'lib/Slim/Slim.php';
 
